@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="/jquery-ui.js"></script>
+<script type="text/javascript" src="/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="/parkbench.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="/screen.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/dialog.css" />
+<link rel="shortcut icon" href="/{%FAVICON%}" />
+
+
+<script>
+
+function myFunction(disp) {
+    if(disp=='yes'){
+    document.getElementById("aspectj").className ="";
+     document.getElementById("btn1aspectj").className ="hidden";
+      document.getElementById("btn2aspectj").className ="";
+    }
+       else {
+    document.getElementById("aspectj").className ="hidden";
+     document.getElementById("btn1aspectj").className ="";
+      document.getElementById("btn2aspectj").className ="hidden";
+    }
+}
+</script>
+<style type="text/css">
+.hidden {
+	display: none;
+}
+
+table, td, th {
+	border: 1px solid black;
+}
+
+table.winner-table {
+	width: 500px;
+	table-layout: fixed;
+	text-align: left;
+	vertical-align: top;
+	padding: 5px;
+}
+
+table.winner-table tr {
+	vertical-align: top;
+	text-align: left;
+}
+
+table.winner-table td.city-table, table.winner-table th.city-table {
+	width: 150px;
+}
+
+table.winner-table td.city-url, table.winner-table th.city-url {
+	width: 400px;
+	word-wrap: break-word;
+}
+</style>
+
+<title>{%TITLE%} - LabPal</title>
+</head>
+<body>
+	<div id="content">
+		<h1 class="text-only">{%TITLE%}</h1>
